@@ -90,6 +90,7 @@ def runWithPlayer(srcDir):
     args.append("-file")
     args.append(srcDirName+"/main.lua")
     configPath=path+"/config.lua"
+    args.append("-load-framework")
     if os.path.exists(configPath):
         f=codecs.open(configPath,"r","utf-8")
         width=640
